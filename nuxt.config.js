@@ -28,7 +28,8 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    //'@nuxtjs/tailwindcss',
+    '@eliyas5044/tailwindcss',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -49,6 +50,10 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    icon: {
+      sizes: [16, 32, 64, 120, 144, 152, 192, 384, 512]
+
+    },
     manifest: {
       lang: 'en',
     },
