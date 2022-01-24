@@ -26,7 +26,7 @@
 <script>
 export default {
   async asyncData({ params, $content }) {
-    const article = await $content(`blog/first`).fetch()
+    const article = await $content(`main`).fetch()
     return {
       article,
     }
