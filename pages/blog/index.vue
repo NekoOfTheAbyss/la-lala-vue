@@ -26,7 +26,7 @@
           <ul class="flex flex-col items-start w-full px-2 list-disc list-inside">
             <li v-for="article in articles" :key="article.url.toLowerCase()">
               <NuxtLink :to="`/guides/${article.url.toLowerCase()}`"
-                >{{ article.title }}           <span class="p-4 text-sm">{{ formatDate(article.createdAt) }}</span>
+                >{{ article.title }}           <span class="p-4 text-sm">{{ formatDate(article.creat) }}</span>
 
               </NuxtLink>
             </li>
@@ -44,7 +44,7 @@ export default {
       return new Date(d).getTime()
     }
     let articles = await $content('blog').fetch()
-    if(Array.isArray(articles)) articles = articles.sort((a, b) => getMS(a.createdAt) - getMS(b.createdAt)).reverse()
+    if(Array.isArray(articles)) articles = articles.sort((a, b) => getMS(a.creat) - getMS(b.creat)).reverse()
     else articles = [articles]
     return {
       articles,

@@ -2,6 +2,8 @@
 title: First Post
 description: 'Dis da first post'
 url: first
+creat: 2022-01-14T12:32:00.735Z
+
 ---
 
 NeTT here. Just a programmer who writes bad code. Or maybe a web developer that makes bad websites.

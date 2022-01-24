@@ -2,6 +2,7 @@
 title: A good guide on making some really basic chicken curry
 description: 'Just a guide on making a basic curry.'
 url: curry
+creat: 2022-01-24T08:26:16.381Z
 ---
 
 Curry is nice. 

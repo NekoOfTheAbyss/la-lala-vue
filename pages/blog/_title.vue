@@ -23,7 +23,7 @@
           >
             {{ article.title }}
           </div>
-          <div class = "p-4 text-sm">{{formatDate(article.createdAt)}}</div>
+          <div class = "p-4 text-sm">{{formatDate(article.creat)}}</div>
           <div class="md:flex flex-row items-start justify-between px-2">
             <div class="flex flex-col items-start w-full md:w-auto order-2">
               <PageTable :news="article" />

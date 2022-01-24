@@ -2,6 +2,7 @@
 title: Getting started with HTML
 description: 'Getting started with HTML'
 url: html
+creat: 2022-01-24T05:59:54.238Z
 ---
 
 If you're here, you probably wanted to learn HTML or someone decided to shove this page on your face.
