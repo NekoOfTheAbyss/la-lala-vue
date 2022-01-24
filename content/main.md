@@ -3,4 +3,4 @@ title: Main Content
 description: 'Nothing here'
 ---
 
-No content here yet. Check other pages.
+This is where I, NeTT, dump all my dumb knowledge. It's kinda fun at times.

@@ -23,13 +23,14 @@
           >
             Recent Posts:
           </div>
-          <div class="flex flex-col items-start w-full px-2">
-            <div v-for="article in articles" :key="article.url.toLowerCase()">
-              <NuxtLink :to="`/blog/${article.url.toLowerCase()}`"
-                >{{ article.title }}
+          <ul class="flex flex-col items-start w-full px-2 list-disc list-inside">
+            <li v-for="article in articles" :key="article.url.toLowerCase()">
+              <NuxtLink :to="`/guides/${article.url.toLowerCase()}`"
+                >{{ article.title }}           <span class="p-4 text-sm">{{ formatDate(article.createdAt) }}</span>
+
               </NuxtLink>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -49,5 +50,10 @@ export default {
       articles,
     }
   },
+  methods: {
+    formatDate(d) {
+      return new Date(d).toUTCString()
+    }
+  }
 }
 </script>
