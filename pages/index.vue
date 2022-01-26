@@ -26,7 +26,7 @@
 <script>
 export default {
   async asyncData({ params, $content }) {
-    const article = await $content(`main`).fetch()
+    const article = await $content(`main/lala`).fetch()
     return {
       article,
     }
