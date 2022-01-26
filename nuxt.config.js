@@ -1,3 +1,5 @@
+import Constants from "./data/Constants";
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -11,7 +13,6 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -56,6 +57,29 @@ export default {
     },
     manifest: {
       lang: 'en',
+      name: Constants.Name,
+      short_name: "NOTA Docs",
+      description: Constants.Description,
+      background_color: Constants.Background,
+      theme_color: Constants.Theme,
+      icons: [16, 32, 64, 120, 144, 152, 192, 384, 512],
+    },
+    meta: {
+      lang: 'en',
+      name: Constants.Name,
+      short_name: "NOTA Docs",
+      description: Constants.Description,
+      background_color: Constants.Background,
+      theme_color: Constants.Theme,
+      icons: [16, 32, 64, 120, 144, 152, 192, 384, 512],
+      appleStatusBarStyle: "black",
+      author: Constants.Author,
+      twitterCard: "summary_large_image",
+      twitterAuthor: "@retraigo",
+      twitterSite: "@nekoofdaabyss",
+      ogHost: "https://nekooftheabyss.xyz",
+      ogUrl: "https://docs.nekooftheabyss.xyz"
+
     },
   },
 
