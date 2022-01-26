@@ -41,6 +41,12 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: this.article.title,
+      description: this.article.description,
+    }
+  },
   async asyncData({ params, $content }) {
     const article = await $content(`lala/${params.title}`).fetch()
     return {
@@ -50,7 +56,7 @@ export default {
   methods: {
     formatDate(d) {
       return new Date(d).toUTCString()
-    }
-  }
+    },
+  },
 }
 </script>

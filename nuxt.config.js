@@ -6,7 +6,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Docs Of The Abyss',
+    title: "Docs",
+    titleTemplate: '%s - Docs Of The Abyss',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

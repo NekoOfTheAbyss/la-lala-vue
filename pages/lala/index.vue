@@ -41,6 +41,12 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: "Lala Docs",
+      description: "A collection of random useful (probably) javascript classes and functions.",
+    }
+  },
   async asyncData({ $content }) {
     function getMS(d) {
       return new Date(d).getTime()
