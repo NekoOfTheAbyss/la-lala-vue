@@ -3,4 +3,4 @@ title: Main Content
 description: 'Nothing here'
 ---
 
-This is where I, NeTT, dump all my dumb knowledge. It's kinda fun at times.
+A documentation site for all my code (at least the open source ones).

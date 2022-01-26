@@ -6,15 +6,9 @@ export default [
     icon: `home`,
   },
   {
-    name: `Blog`,
-    route: `/blog`,
-    key: `blog`,
+    name: `Lala`,
+    route: `/lala`,
+    key: `lala`,
     icon: `file`,
-  },
-  {
-    name: `Guides`,
-    route: `/guides`,
-    key: `guides`,
-    icon: `tv`,
   },
 ]

@@ -21,13 +21,15 @@
               border-gray-400 border-b-2
             "
           >
-            Recent Posts:
+            Documentation:
           </div>
-          <ul class="flex flex-col items-start w-full px-2 list-disc list-inside">
+          <PageArticle :news="articlex" />
+          <ul
+            class="flex flex-col items-start w-full px-2 list-disc list-inside"
+          >
             <li v-for="article in articles" :key="article.url.toLowerCase()">
-              <NuxtLink :to="`/guides/${article.url.toLowerCase()}`"
-                >{{ article.title }}           <span class="p-4 text-sm">{{ formatDate(article.creat) }}</span>
-
+              <NuxtLink :to="`/lala/${article.url.toLowerCase()}`"
+                >{{ article.title }}
               </NuxtLink>
             </li>
           </ul>
@@ -43,7 +45,8 @@ export default {
     function getMS(d) {
       return new Date(d).getTime()
     }
-    let articles = await $content('guides').fetch()
+    const articlex = await $content('main/lala').fetch()
+    let articles = await $content('lala').fetch()
     if (Array.isArray(articles))
       articles = articles
         .sort((a, b) => getMS(a.creat) - getMS(b.creat))
@@ -51,12 +54,13 @@ export default {
     else articles = [articles]
     return {
       articles,
+      articlex,
     }
   },
   methods: {
     formatDate(d) {
       return new Date(d).toUTCString()
-    }
-  }
+    },
+  },
 }
 </script>

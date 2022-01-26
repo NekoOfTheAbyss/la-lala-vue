@@ -1,3 +1,3 @@
 export default {
-    Name: "Neko Of The Abyss"
+    Name: "Docs Of The Abyss"
 }
