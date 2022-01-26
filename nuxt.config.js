@@ -63,7 +63,6 @@ export default {
       description: Constants.Description,
       background_color: Constants.Background,
       theme_color: Constants.Theme,
-      icons: [16, 32, 64, 120, 144, 152, 192, 384, 512],
     },
     meta: {
       lang: 'en',
@@ -72,7 +71,6 @@ export default {
       description: Constants.Description,
       background_color: Constants.Background,
       theme_color: Constants.Theme,
-      icons: [16, 32, 64, 120, 144, 152, 192, 384, 512],
       appleStatusBarStyle: "black",
       author: Constants.Author,
       twitterCard: "summary_large_image",
@@ -80,7 +78,6 @@ export default {
       twitterSite: "@nekoofdaabyss",
       ogHost: "https://nekooftheabyss.xyz",
       ogUrl: "https://docs.nekooftheabyss.xyz"
-
     },
   },
 
