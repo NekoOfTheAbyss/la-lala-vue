@@ -72,8 +72,6 @@ export default {
       return new Date(d).toUTCString()
     },
     getResult() {
-      console.log(typeof lala.random[this.article.url])
-      console.log(typeof lala.random.string)
       this.result = lala.random[this.article.url] ? lala.random[this.article.url]() : lala[this.article.url] ? new lala[this.article.url]() : 'Idk what to add here'
     }
   },
