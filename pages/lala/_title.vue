@@ -31,8 +31,20 @@
             </div>
             <div class="flex flex-col items-start w-full order-1">
               <PageArticle :news="article" />
+              <div class = "flex flex-col items-start justify-start">
+            <div class = "p-3">
+              {{result}}
+            </div>
+            <button
+            class = "p-4 bg-zinc-600 text-white rounded-lg transition duration-500 ease-in-out transform hover:translate-y-1"
+              @click="x => result = lala.random[`${article.url}`] ? lala.random[`${article.url}`]() : lala[`${article.url}`] ? new lala[`${article.url}`]() : 'Idk what to add here'"
+            >
+              Try it!
+            </button>
+          </div>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -40,6 +52,7 @@
 </template>
 
 <script>
+import lala from '@/lala'
 export default {
   head() {
     return {
@@ -51,6 +64,8 @@ export default {
     const article = await $content(`lala/${params.title}`).fetch()
     return {
       article,
+      lala,
+      result: "",
     }
   },
   methods: {

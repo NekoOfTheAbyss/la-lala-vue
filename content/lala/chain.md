@@ -22,4 +22,3 @@ lala.random.chain();
     I'm Yeztaqte. 17 years ago, I was bitten by a snake and lost my life. Forward this story to 15 people or your grandparents will be impaled by an umbrella.
 */
 ```
-

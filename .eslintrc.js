@@ -4,6 +4,7 @@ module.exports = {
     browser: true,
     node: true,
   },
+  ignorePatterns: ["lala/*.js"],
   parserOptions: {
     parser: '@babel/eslint-parser',
     requireConfigFile: false,
