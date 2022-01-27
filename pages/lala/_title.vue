@@ -74,7 +74,7 @@ export default {
     },
     getResult() {
       console.log(this.article.url)
-      console.log(this.lala.random[this.article.url])
+      console.log(this.lala.random)
       this.result = this.lala.random[`${this.article.url}`] ? this.lala.random[`${this.article.url}`]() : this.lala[`${this.article.url}`] ? new this.lala[`${this.article.url}`]() : 'Idk what to add here'
     }
   },
