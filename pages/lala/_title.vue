@@ -37,7 +37,7 @@
             </div>
             <button
             class = "p-4 bg-zinc-600 text-white rounded-lg transition duration-500 ease-in-out transform hover:translate-y-1"
-              @click="x => result = lala.random[`${article.url}`] ? lala.random[`${article.url}`]() : lala[`${article.url}`] ? new lala[`${article.url}`]() : 'Idk what to add here'"
+              @click="getResult"
             >
               Try it!
             </button>
@@ -72,6 +72,9 @@ export default {
     formatDate(d) {
       return new Date(d).toUTCString()
     },
+    getResult() {
+      this.result = this.lala.random[`${this.article.url}`] ? this.lala.random[`${this.article.url}`]() : this.lala[`${this.article.url}`] ? new this.lala[`${this.article.url}`]() : 'Idk what to add here'
+    }
   },
 }
 </script>
