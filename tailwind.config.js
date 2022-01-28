@@ -26,6 +26,7 @@ module.exports = {
     extend: {
       typography(theme) {
         return {
+          DEFAULT: { css: { code: { color: theme('colors.zinc.100') } } },
           dark: {
             css: {
               color: theme('colors.zinc.300'),
