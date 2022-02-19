@@ -9,7 +9,7 @@ Random story generator. Not much variety yet. Still under work. Uses the random 
 
 ## Usage
 ```js
-lala.random.chain()
+lala.random.genChain()
 ```
 Accepts no parameters.
 
@@ -17,7 +17,7 @@ Returns a string in proper case.
 
 Example,
 ```js
-lala.random.chain(); 
+lala.random.genChain(); 
 /*
     I'm Yeztaqte. 17 years ago, I was bitten by a snake and lost my life. Forward this story to 15 people or your grandparents will be impaled by an umbrella.
 */

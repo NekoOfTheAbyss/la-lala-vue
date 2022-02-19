@@ -52,7 +52,7 @@
 </template>
 
 <script>
-import lala from '@/lala'
+import lala from '@nekooftheabyss/lala'
 export default {
   head() {
     return {

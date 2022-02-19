@@ -53,8 +53,8 @@ export default {
   <div
     class="
       dark:bg-zinc-900 border-nett-maid border-b
-      bg-black
-      md:bg-white md:dark:bg-zinc-900 border-nett-maid border-b
+      
+      bg-nett-matchpurple md:dark:bg-zinc-900 border-nett-maid border-b
       shadow-md
       max-w-full
       block
@@ -75,8 +75,8 @@ export default {
               justify-center
               p-2
               rounded-md
-              text-white md:text-zinc-700 dark:text-white
-              hover:text-zinc-700 dark:text-white
+              text-white md:text-white dark:text-white
+              hover:text-white dark:text-white
               focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white
             `"
             @click="toggleOn"
@@ -188,8 +188,8 @@ export default {
                     :to="typeof route == 'string' ? route : '#'"
                     :class="
                       (title === key
-                        ? 'text-zinc-700 dark:text-white '
-                        : 'text-black dark:text-white border-transparent ') +
+                        ? 'text-black md:text-white dark:text-white '
+                        : 'text-gray-700 md:text-gray-300 dark:text-white border-transparent ') +
                       (Array.isArray(route) ? 'group ' : '') +
                       'transition duration-500 ease-in-out tracking-wide px-3 flex flex-row space-x-4 md:uppercase py-4 text-xs md:text-md hover:dark:text-nett-maid hover:text-zinc-800 block'
                     "
@@ -222,7 +222,7 @@ export default {
                           p-2
                           flex flex-nowrap
                           text-zinc-800
-                          hover:text-black
+                          hover:text-gray-300
                         "
                         :href="route2"
                         >{{ name2 }}</a
@@ -235,8 +235,8 @@ export default {
                     @click="(x) => setState(key)"
                     :class="
                       (title === key
-                        ? 'text-zinc-700 dark:text-white '
-                        : 'dark:text-white text-black ') +
+                        ? 'text-white dark:text-white '
+                        : 'dark:text-white text-gray-300 ') +
                       (Array.isArray(route) ? 'group ' : '') +
                       'transition duration-500 ease-in-out tracking-wide px-3 flex flex-row space-x-4 md:uppercase py-4 text-xs md:text-md hover:dark:text-nett-maid hover:text-zinc-800 block'
                     "
@@ -272,7 +272,7 @@ export default {
                           p-2
                           flex flex-nowrap
                           text-zinc-800
-                          hover:bg-zinc-100 hover:text-black
+                          hover:bg-zinc-100 hover:text-gray-300
                         "
                         :to="route2"
                         >{{ name2 }}</NuxtLink
@@ -284,8 +284,8 @@ export default {
                     :href="typeof route == 'string' ? route : '#'"
                     :class="
                       (title === key
-                        ? 'text-zinc-700 dark:text-white '
-                        : 'dark:text-white text-black ') +
+                        ? 'text-white dark:text-white '
+                        : 'dark:text-white text-gray-300 ') +
                       (Array.isArray(route) ? 'group ' : '') +
                       'transition duration-500 ease-in-out tracking-wide px-3 flex flex-row space-x-4 md:uppercase py-4 text-xs md:text-md hover:dark:text-nett-maid hover:text-zinc-800 block'
                     "
@@ -318,7 +318,7 @@ export default {
                           p-2
                           flex flex-nowrap
                           text-zinc-800
-                          hover:text-black
+                          hover:text-gray-300
                         "
                         :href="route2"
                         >{{ name2 }}</a

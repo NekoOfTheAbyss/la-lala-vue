@@ -26,7 +26,7 @@ module.exports = {
     extend: {
       typography(theme) {
         return {
-          DEFAULT: { css: { code: { color: theme('colors.zinc.100') } } },
+          DEFAULT: { css: { code: { color: theme('colors.zinc.100'), backgroundColor: theme('colors.nett.matchpurple') } } },
           dark: {
             css: {
               color: theme('colors.zinc.300'),
@@ -91,6 +91,7 @@ module.exports = {
         nett: {
           kuro: '#944dff',
           maid: '#ff00c3',
+          matchpurple: '#2a2139',
         },
       },
       translate: {

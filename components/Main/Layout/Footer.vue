@@ -1,11 +1,10 @@
 
 <template>
   <footer
-    class="
+    class="text-gray-300
       dark:bg-zinc-900
       md:dark:bg-zinc-900 border-nett-maid border-t
-      bg-black
-      md:bg-white
+      bg-nett-matchpurple
       shadow-md
       text-center
       md:text-left

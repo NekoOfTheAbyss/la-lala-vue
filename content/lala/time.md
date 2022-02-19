@@ -8,7 +8,7 @@ creat: 2022-01-26T14:15:00.735Z
 Time class. Yes, Time. Ain't gonna give it a better name with my crappy naming sense as you can see in the name of this repo. Formerly `@retraigo/duration.js`. 
 
 ```js
-const { Time } = require('lala') // Just an example, lala is not my npm package or something
+import { Time } from '@nekooftheabyss/lala'
 ```
 
 ## Usage

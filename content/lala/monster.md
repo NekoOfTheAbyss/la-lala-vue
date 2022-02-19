@@ -9,7 +9,7 @@ Fantasy name generator. More like a mob name generator. Normal name generator + 
 
 ## Usage
 ```js
-lala.random.monster()
+lala.random.genMonster()
 ```
 Accepts no parameters.
 
@@ -17,6 +17,6 @@ Returns a string in lowercase.
 
 Example,
 ```js
-lala.random.monster(); // Something like Yuttoin
+lala.random.genMonster(); // Something like Yuttoin
 ```
 

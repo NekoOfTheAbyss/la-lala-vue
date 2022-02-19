@@ -11,7 +11,7 @@ String generator. Generates an alphanumeric string.
 
 ## Usage
 ```js
-lala.random.string(length)
+lala.random.genString(length)
 ```
 Where `length` is any number, representing the length of the name.
 
@@ -19,10 +19,10 @@ Returns a string in mixed case. Alphanumeric btw.
 
 Example,
 ```js
-lala.random.string(10); // Something like 9kum9XpGDr
+lala.random.genString(10); // Something like 9kum9XpGDr
 
-lala.random.string(0); // Just a single character, like "a" or "3"
+lala.random.genString(0); // Just a single character, like "a" or "3"
 
-lala.random.string(-1); // Negative length works the same as 0
+lala.random.genString(-1); // Negative length works the same as 0
 ```
 
