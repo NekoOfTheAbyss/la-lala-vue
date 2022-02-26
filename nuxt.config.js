@@ -78,8 +78,8 @@ export default {
       twitterCard: 'summary_large_image',
       twitterAuthor: '@retraigo',
       twitterSite: '@nekoofdaabyss',
-      ogHost: 'https://nekooftheabyss.xyz',
-      ogUrl: 'https://docs.nekooftheabyss.xyz',
+      ogHost: 'https://lala.nekooftheabyss.xyz',
+      ogUrl: 'https://lala.nekooftheabyss.xyz',
     },
   },
 
