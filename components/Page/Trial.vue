@@ -36,7 +36,7 @@
                     id="someInput"
                     v-model="input.text"
                     type="text"
-                    class="border-nett-matchpurple border-2 w-full h-12 rounded-md p-2"
+                    class="border-nett-matchpurple dark:bg-nett-matchpurple dark:border-nett-maid border-2 w-full h-12 rounded-md p-2"
                   /> </div>
                 <div
                   v-if="inputThing.type === 'number'"
@@ -45,7 +45,7 @@
                     id="someInput"
                     v-model="input.number"
                     type="number"
-                    class="border-nett-matchpurple border-2 w-full h-12 rounded-md p-2"
+                    class="border-nett-matchpurple dark:bg-nett-matchpurple dark:border-nett-maid border-2 w-full h-12 rounded-md p-2"
                   /> </div>
                 <div
                   v-if="inputThing.type === 'boolean'"
@@ -54,7 +54,7 @@
                     id="someInput"
                     v-model="input.condit"
                     type="checkbox"
-                    class="border-nett-matchpurple border-2 w-full h-12 rounded-md p-2"
+                    class="border-nett-matchpurple dark:bg-nett-matchpurple dark:border-nett-maid border-2 w-full h-12 rounded-md p-2"
                   /> </div>
               </div>
               <div class="flex flex-col items-start justify-start">
