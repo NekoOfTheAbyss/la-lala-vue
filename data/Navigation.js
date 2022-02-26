@@ -5,10 +5,4 @@ export default [
     key: `home`,
     icon: `home`,
   },
-  {
-    name: `Lala`,
-    route: `/lala`,
-    key: `lala`,
-    icon: `file`,
-  },
 ]

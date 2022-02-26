@@ -10,7 +10,6 @@
       md:text-left
     "
   >
-    <LayoutPreFooter />
     <ul
       class="
         sm:flex

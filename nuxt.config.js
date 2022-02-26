@@ -1,13 +1,15 @@
-import Constants from "./data/Constants";
+import Constants from './data/Constants'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Docs",
-    titleTemplate: '%s - Docs Of The Abyss',
+    title: 'La Lala',
+    titleTemplate: '%s - La Lala',
+
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -17,12 +19,11 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    "./assets/transition.css"
-  ],
+  css: ['./assets/transition.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -55,13 +56,12 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     icon: {
-      sizes: [16, 32, 64, 120, 144, 152, 192, 384, 512]
-
+      sizes: [16, 32, 64, 120, 144, 152, 192, 384, 512],
     },
     manifest: {
       lang: 'en',
       name: Constants.Name,
-      short_name: "NOTA Docs",
+      short_name: 'La Lala',
       description: Constants.Description,
       background_color: Constants.Background,
       theme_color: Constants.Theme,
@@ -69,17 +69,17 @@ export default {
     meta: {
       lang: 'en',
       name: Constants.Name,
-      short_name: "NOTA Docs",
+      short_name: 'La Lala',
       description: Constants.Description,
       background_color: Constants.Background,
       theme_color: Constants.Theme,
-      appleStatusBarStyle: "black",
+      appleStatusBarStyle: 'black',
       author: Constants.Author,
-      twitterCard: "summary_large_image",
-      twitterAuthor: "@retraigo",
-      twitterSite: "@nekoofdaabyss",
-      ogHost: "https://nekooftheabyss.xyz",
-      ogUrl: "https://docs.nekooftheabyss.xyz"
+      twitterCard: 'summary_large_image',
+      twitterAuthor: '@retraigo',
+      twitterSite: '@nekoofdaabyss',
+      ogHost: 'https://nekooftheabyss.xyz',
+      ogUrl: 'https://docs.nekooftheabyss.xyz',
     },
   },
 
@@ -87,11 +87,13 @@ export default {
   content: {
     markdown: {
       prism: {
-        theme: 'prism-themes/themes/prism-synthwave84.css'
-      }
-    }
+        theme: 'prism-themes/themes/prism-synthwave84.css',
+      },
+    },
   },
-  
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    transpile: ['@nekooftheabyss/lala'],
+  },
 }
