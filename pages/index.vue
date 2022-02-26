@@ -51,13 +51,6 @@
 <script>
 import articles from '@/data/Features'
 export default {
-  head() {
-    return {
-      title: 'Lala Docs',
-      description:
-        'A collection of random useful (probably) javascript classes and functions.',
-    }
-  },
   async asyncData({ $content }) {
     const articlex = await $content('main/lala').fetch()
     return {
