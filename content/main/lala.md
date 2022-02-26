@@ -5,8 +5,15 @@ url: main
 creat: 2022-01-26T14:15:00.735Z
 ---
 
-**As of 19th February 2022, Lala has dropped CJS support and is now a pure ESM module. You can find older versions (before v2.0.0) as [releases](https://github.com/NekoOfTheAbyss/lala/releases/tag/v1.2.2) which support CJS (I suggest moving to ESM tho).**
+| **Check Out These Links** | Don't forget to join our Discord server!                             |
+| ------------------------- | -------------------------------------------------------------------- |
+| Neko Of The Abyss         | [Website](https://nekooftheabyss.xyz)                                |
+| NeTT                      | [Website](https://nekooftheabyss.xyz/NeTT)                           |
+| Lala                      | [Github](https://github.com/nekooftheabyss/lala)                     |
+| Lala (CJS)                | [Github](https://github.com/NekoOfTheAbyss/lala/releases/tag/v1.2.2) |
+| La Lala (Discord)         | [Github](https://github.com/nekooftheabyss/lala-discord)             |
+| Discord Server            | [Discord](https://discord.gg/G5jpusmDqw)                             |
 
-A collection of random useful (probably) javascript classes and functions. I compiled them into a web app for easy use.
+Lala is a collection of random useful (probably) javascript classes and functions. I compiled them into a web app for easy use.
 
-Click one of the buttons below to test it out!
+Lala is licensed under the MIT license. Please refer to [the license](https://github.com/NekoOfTheAbyss/lala/blob/main/LICENSE) for information about copyright.

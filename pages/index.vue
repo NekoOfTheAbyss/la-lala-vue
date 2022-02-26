@@ -17,30 +17,33 @@
               font-semibold
               border-gray-400 border-b-2
             ">
-            Stuff:
+            Some Random Text Generators:
           </div>
-          <PageArticle :news="articlex" />
-          <div class = "md:flex flex-row justify-between items-start space-y-4 md:space-y-0 md:space-x-4">
-          <ul class="flex flex-col items-start w-full px-2 space-y-4">
-            <li
-              v-for="article in articles"
-              :key="article.name.toLowerCase()"
-              class="p-2 w-full"
-            >
-              <a
-                href="javascript:void(0)"
-                @click="x => setEnabled(article.name.toLowerCase())"
-                class="p-2 max-w-6xl md:max-w-md w-full block bg-nett-matchpurple text-nett-maid font-semibold text-center"
-              >{{ article.name.split("-").map(s => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase()).join(" ") }}
-              </a>
-            </li>
-          </ul>
-          <div class="py-2 w-full">
-            <PageTrial
-              v-if="enabled"
-              :modez="modez"
-            />
+          <div class="md:flex flex-row justify-between items-start space-y-4 md:space-y-0 md:space-x-4">
+            <ul class="flex flex-col items-start w-full px-2 space-y-4">
+              <li
+                v-for="article in articles"
+                :key="article.name.toLowerCase()"
+                class="p-2 w-full"
+              >
+                <a
+                  href="javascript:void(0)"
+                  @click="x => setEnabled(article.name.toLowerCase())"
+                  class="p-2 max-w-6xl md:max-w-md w-full block bg-nett-matchpurple text-nett-maid font-semibold text-center"
+                >{{ article.name.split("-").map(s => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase()).join(" ") }}
+                </a>
+              </li>
+            </ul>
+            <div class="py-2 w-full h-full">
+              <PageTrial
+                v-if="enabled"
+                :modez="modez"
+              />
+              <PageWaste v-else />
+            </div>
           </div>
+          <div class="p-4">
+            <PageArticle :news="articlex" />
           </div>
         </div>
       </div>

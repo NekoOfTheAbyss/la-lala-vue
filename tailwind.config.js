@@ -26,9 +26,10 @@ module.exports = {
     extend: {
       typography(theme) {
         return {
-          DEFAULT: { css: { code: { color: theme('colors.zinc.100'), backgroundColor: theme('colors.nett.matchpurple') } } },
+          DEFAULT: { css: { maxWidth: '90rem', code: { color: theme('colors.zinc.100'), backgroundColor: theme('colors.nett.matchpurple') } } },
           dark: {
             css: {
+              maxWidth: '90rem',
               color: theme('colors.zinc.300'),
               '[class~="lead"]': { color: theme('colors.zinc.400') },
               a: { color: theme('colors.zinc.100') },
@@ -57,7 +58,7 @@ module.exports = {
             },
           },
           css: {
-            maxWidth: '60rem',
+            maxWidth: '90rem',
           },
         }
       },
