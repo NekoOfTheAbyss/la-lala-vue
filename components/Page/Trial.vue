@@ -58,7 +58,7 @@
                   /> </div>
               </div>
               <div class="flex flex-col items-start justify-start">
-                <div class="p-3">
+                <div class="p-3 break-all">
                   {{result ? `Your Result: ${["name", "character", "fantasy-name"].includes(article.name) ? result.split(" ").map(s => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase()).join(" ") : result}` : ``}}
                 </div>
                 <button

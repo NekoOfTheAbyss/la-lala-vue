@@ -7,7 +7,7 @@ export default [
             {
                 type: "number",
                 default: 10,
-                description: "Enter the length of the string!"
+                description: "Enter the length of the string! Larger the number, worse the speed and greater the risk of crashing!"
             }
         ]
     },
@@ -19,7 +19,7 @@ export default [
             {
                 type: "number",
                 default: 10,
-                description: "Enter the length of the name!"
+                description: "Enter the length of the name! Larger the number, worse the speed and greater the risk of crashing!"
             }
         ]
     },
