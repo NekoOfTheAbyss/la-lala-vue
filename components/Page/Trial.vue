@@ -58,7 +58,7 @@
                   /> </div>
               </div>
               <div class="flex flex-col items-start justify-start">
-                <div class="p-3 break-all">
+                <div :class="`p-3 ${['string', 'name', 'character', 'fantasy-name'].includes(article.name) ? 'break-all' : ''}`">
                   {{result ? `Your Result: ${["name", "character", "fantasy-name"].includes(article.name) ? result.split(" ").map(s => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase()).join(" ") : result}` : ``}}
                 </div>
                 <button
@@ -82,10 +82,10 @@ import lala from '@nekooftheabyss/lala'
 import articles from '@/data/Features'
 export default {
   props: {
-      modez: {
-          type: String,
-          default: () => "string"
-      }
+    modez: {
+      type: String,
+      default: () => 'string',
+    },
   },
   data() {
     const article = articles.find((x) => x.name === this.modez)
@@ -116,7 +116,7 @@ export default {
               : null
           )
         : 'Temporary Error'
-        console.log(this.result)
+      console.log(this.result)
     },
   },
 }
