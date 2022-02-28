@@ -108,7 +108,7 @@ export default {
       return new Date(d).toUTCString()
     },
     submitOrNah(e) {
-      if(e.keyCode === 13) return this.getResult
+      if(e.keyCode === 13) return this.getResult()
     },
     getResult() {
       this.result = lala.random[this.article.keyType]
