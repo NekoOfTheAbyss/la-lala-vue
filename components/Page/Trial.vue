@@ -108,12 +108,14 @@ export default {
       return new Date(d).toUTCString()
     },
     submitOrNah(e) {
-      if(e.keyCode === 13) return this.getResult()
+      if (e.keyCode === 13) return this.getResult()
     },
     getResult() {
       this.result = lala.random[this.article.keyType]
         ? lala.random[this.article.keyType](
-            this.article.args.length !== 0
+            this.article.name === 'fantasy-creature'
+              ? true
+              : this.article.args.length !== 0
               ? this.article.args[0].type === 'text'
                 ? this.input.text
                 : this.article.args[0].type === 'number'

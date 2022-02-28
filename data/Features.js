@@ -48,6 +48,12 @@ export default [
         args: []
     },
     {
+        name: "fantasy-creature",
+        keyType: "genRace",
+        description: "Generate a random fantasy race.",
+        args: []
+    },
+    {
         name: "story",
         keyType: "genStory",
         description: "Generate a random fantasy story!",
