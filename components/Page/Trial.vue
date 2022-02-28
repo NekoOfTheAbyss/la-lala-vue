@@ -35,6 +35,7 @@
                 ><label for="someInput">{{inputThing.description}}</label><input
                     id="someInput"
                     v-model="input.text"
+                    @keyup="submitOrNah"
                     type="text"
                     class="border-nett-matchpurple dark:bg-nett-matchpurple dark:border-nett-maid border-2 w-full h-12 rounded-md p-2"
                   /> </div>
@@ -44,6 +45,7 @@
                 ><label for="someInput">{{inputThing.description}}</label><input
                     id="someInput"
                     v-model="input.number"
+                    @keyup="submitOrNah"
                     type="number"
                     class="border-nett-matchpurple dark:bg-nett-matchpurple dark:border-nett-maid border-2 w-full h-12 rounded-md p-2"
                   /> </div>
@@ -53,6 +55,7 @@
                 ><label for="someInput">{{inputThing.description}}</label><input
                     id="someInput"
                     v-model="input.condit"
+                    @keyup="submitOrNah"
                     type="checkbox"
                     class="border-nett-matchpurple dark:bg-nett-matchpurple dark:border-nett-maid border-2 w-full h-12 rounded-md p-2"
                   /> </div>
@@ -103,6 +106,9 @@ export default {
   methods: {
     formatDate(d) {
       return new Date(d).toUTCString()
+    },
+    submitOrNah(e) {
+      if(e.keyCode === 13) return this.getResult
     },
     getResult() {
       this.result = lala.random[this.article.keyType]
