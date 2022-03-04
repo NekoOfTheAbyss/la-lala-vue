@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@babel/eslint-parser': ^7.16.3
   '@eliyas5044/tailwindcss': ^1.1.4
-  '@nekooftheabyss/lala': ^2.1.0
+  '@nekooftheabyss/lala': ^2.1.2
   '@nuxt/content': ^1.15.1
   '@nuxtjs/axios': ^5.13.6
   '@nuxtjs/eslint-config': ^8.0.0
@@ -26,7 +26,7 @@ specifiers:
   webpack: ^4.46.0
 
 dependencies:
-  '@nekooftheabyss/lala': 2.1.0
+  '@nekooftheabyss/lala': 2.1.2
   '@nuxt/content': 1.15.1_webpack@4.46.0
   '@nuxtjs/axios': 5.13.6
   '@nuxtjs/pwa': 3.3.5
@@ -1321,8 +1321,8 @@ packages:
     resolution: {integrity: sha512-u2VH/4h4kZww23bak5I/oRai8VqIZCSuqiLbuSHpYXHB9Na5E9KNazh59prgUyvMzfooY7XKiHejbKVxFoAEOQ==}
     dev: false
 
-  /@nekooftheabyss/lala/2.1.0:
-    resolution: {integrity: sha512-mMaIx6KDKarTD7pPN+Z3HddKV581Tmm8u6QpyyBchlBkQ/lw/XYho1xNjMPjuG8NdD1rqz7yefMobAH2EImE1A==}
+  /@nekooftheabyss/lala/2.1.2:
+    resolution: {integrity: sha512-NrB5Fq3wzoGgR6Enz5t55YeVybkQ/ogerdN529TjTCbqc02wqRQYMVCI0RGt+CdwvDTUdPx9vYwbEUTLW/AXSg==}
     dev: false
 
   /@nodelib/fs.scandir/2.1.5:
